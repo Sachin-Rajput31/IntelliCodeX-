@@ -18,8 +18,8 @@ const Form = () => {
   const submithandler = async (e) => {
     e.preventDefault();
     const url = islogin
-      ? "http://localhost:3000/api/auth/login"
-      : "http://localhost:3000/api/auth/register";
+      ? "https://intellicodex-backend.onrender.com/api/auth/login"
+      : "https://intellicodex-backend.onrender.com/api/auth/register";
 
     try {
       const res = await axios.post(url, formData);
